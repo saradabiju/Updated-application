@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import java.lang.String?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Polygon?>
+
+<fx:root prefHeight="18.0" prefWidth="35.0" stylesheets="@app.css" type="Pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <CubicCurve fx:id="node_link" controlX2="50.0" controlY1="10.0" controlY2="10.0" endX="10.0" fill="#1f93ff00" layoutY="3.0" stroke="BLACK" strokeWidth="3.0" />
+      <Pane fx:id="attribute" layoutX="-31.0" layoutY="-16.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="177.0" scaleX="0.5" scaleY="0.5" styleClass="icon-cyan">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <children>
+            <HBox fx:id="relation" alignment="TOP_CENTER" layoutX="28.0" prefHeight="68.0" prefWidth="118.0" stylesheets="@app.css">
+               <styleClass>
+                  <String fx:value="icon-cyan" />
+                  <String fx:value="icon-white" />
+                  <String fx:value="node-overlay" />
+                  <String fx:value="right-link-handle" />
+                  <String fx:value="parent" />
+               </styleClass>
+            </HBox>
+            <AnchorPane fx:id="anchorpaneright" layoutX="142.0" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="25.0">
+               <children>
+                  <Polygon fx:id="arrowright" layoutX="12.0" layoutY="47.0" rotate="90.9" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE">
+                    <points>
+                      <Double fx:value="-50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="0.0" />
+                      <Double fx:value="-60.0" />
+                    </points>
+                  </Polygon>
+               </children>
+               <styleClass>
+                  <String fx:value="icon-purple" />
+                  <String fx:value="icon-cyan" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorpaneleft" layoutX="-7.0" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="25.0" styleClass="icon-cyan">
+               <children>
+                  <Polygon fx:id="arrowleft" fill="#0d141a" layoutX="23.0" layoutY="44.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="-93.2" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="-27.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</fx:root>

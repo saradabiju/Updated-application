@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="194.0" scaleX="0.6" scaleY="0.6" styleClass="icon-grey" stylesheets="@app.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="96.0" prefWidth="202.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox focusTraversable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="16.0" prefWidth="202.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <AnchorPane fx:id="newgraph" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="121.0">
+                           <effect>
+                              <SepiaTone />
+                           </effect>
+                           <children>
+                              <Label fx:id="close_button" alignment="TOP_RIGHT" layoutX="165.0" prefHeight="26.0" prefWidth="28.0" text="X" textAlignment="RIGHT">
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children></AnchorPane>
+                     </children>
+                  </HBox>
+                  <AnchorPane />
+               </children>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </HBox>
+            <TextArea fx:id="title_bar" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="144.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="left_link_handle" layoutX="-17.0" layoutY="-7.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="14.0" styleClass="left-link-handle" />
+      <AnchorPane fx:id="right_link_handle" layoutX="207.0" layoutY="-8.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="20.0" styleClass="right-link-handle">
+         <effect>
+            <Shadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</fx:root>
